@@ -8,6 +8,7 @@ import functions
 import init
 import random
 import animation
+import animation2
 
 #--------------------------main program-------------------------------------------------------
 #lights up the onborad led to have an indication of wether the board is running or not
@@ -35,6 +36,7 @@ if config.save_stats == True:
         f.close()
 
 #animation.idle_mode4()
+animation2.idol_startup()
 
 #main loop
 while True:
@@ -88,7 +90,7 @@ while True:
         if config.idle_mode == 3:
             animation.idle_mode3()
         if config.idle_mode == 4:
-            animation.idle_mode4()
+            animation2.idle_mode4()
     
     
     #checks if no buttons are pressed
