@@ -1,6 +1,7 @@
 function call_on_start()
 {
     update_leniency_input();
+    update_startup_animation();
     update_idle_mode();
 
     set_code();
@@ -21,6 +22,20 @@ function update_leniency_input()
     {
         document.getElementById("leniency_tb").disabled = false;
         document.getElementById("leniency_tx").style.color = "black";
+    }
+}
+
+function update_startup_animation()
+{
+    var checkbox = document.getElementById("idleop_cb").checked;
+
+    if (checkbox == true)
+    {
+        document.getElementById("idleop_cb").style.color = "black";
+    }
+    else
+    {
+        document.getElementById("idleop_cb").style.color = "grey";
     }
 }
 

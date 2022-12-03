@@ -99,9 +99,15 @@
             <option value="1">Toggle On/Off</option>
         </select> 
         
+        <!--Startup Animation-->
+        <div>Startup Animation:</div>
+        <input type="checkbox" id="idleop_cb" name="idleop_cb">
+        <label for="idleop_cb"> Disable Startup Animation</label>
+        <br><br>
+        
         <!--IDLE MODE-->
         <div id="idlemode_tx">Idle Mode:</div>
-
+        
         <button id="idle1_config" hidden onclick="show_idle_modal()">⚙</button>
         <select name="idle_select" id="idle_select" onchange="show_idle1_config()">
             <option value="1">Mode 1 (Breathing)</option>

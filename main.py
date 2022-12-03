@@ -36,7 +36,12 @@ if config.save_stats == True:
         f.close()
 
 #animation.idle_mode4()
-animation2.idol_startup()
+#Startup Animation
+try:
+    if(config.startup_animation):
+        animation2.idol_startup()
+except:
+    pass
 
 #main loop
 while True:

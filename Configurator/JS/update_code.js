@@ -53,6 +53,14 @@ function set_code()
   brightness_steps = 1 / brightness_steps;
   var brightness_steps2 = "brightness_steps = " + brightness_steps;
 
+  //Startup Animation
+  var stanime;
+  if(document.getElementById("idleop_cb").checked)
+      stanime = "False";
+  else
+      stanime = "True";
+  var stanime2 = "startup_animation = " + stanime;
+
   //idle mode
   var idle_mode = document.getElementById("idle_select").value;
   if(document.getElementById("idle_cb").checked == true)
@@ -222,6 +230,7 @@ function set_code()
                                               + leniency2 + "\n"
                                               + brightness2 + "\n"
                                               + brightness_steps2 + "\n"
+                                              + stanime2 + "\n"
                                               + idle_mode2 + "\n"
                                               + idle_after2 + "\n"
                                               + stats2 + "\n"

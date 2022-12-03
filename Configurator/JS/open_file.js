@@ -126,6 +126,15 @@ function get_code()
     document.getElementById("brightness_steps").value = brightness_steps;
     console.log(brightness_steps);
 
+    //get startup_animation
+    var startup_animation = get_value("startup_animation = ");
+    var idleop_cb = document.getElementById("idleop_cb");
+    if(startup_animation == "False")
+        idleop_cb.checked = true;
+    else
+        idleop_cb.checked = false;
+    console.log(startup_animation);
+
     //get idle_mode  
     var idle_mode = get_value("idle_mode = ");
     var idle_after = get_value("idle_after = ");
